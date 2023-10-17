@@ -162,3 +162,16 @@ right: -14px;
 top: -90%;
 position: absolute;
 }
+
+.filter-shape::after{
+	border: inset 8px;
+	content: "";
+	display: block;
+	height: 0;
+	width: 0;
+	border-color: transparent transparent #e5e5e5 transparent;
+	border-bottom-style: solid;
+	bottom: 34%;
+	left: 0.92857rem;
+	position: absolute;
+}

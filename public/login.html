@@ -6,10 +6,266 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="icon" type="image/x-icon" href="./image/favicon.png">
   <title>CSC || Login</title>
 </head>
 <body>
-  <header class="relative">
+  <header class="relative"> 
+    <!-- mobile menu -->
+    <div class="mobileMenu hidden min-h-screen absolute left-0 bottom-0 w-full top-36 z-30">
+      <div class="relative min-h-screen font-bold text-white bg-brand-gray-100 space-y-3.5 p-5 overflow-hidden">
+        <!-- Firearms -->
+        <div>
+          <button type="button" class="w-full mobileToggle flex items-center justify-between">
+            <span>Firearms</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+            <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+              <span>Firearms</span>        
+            </button>
+              <div class="mt-5 flex flex-col space-y-2.5">
+                <a  href="https://store.theshootingcentre.com/firearms/pistols/">Pistols</a>
+                <a  href="https://store.theshootingcentre.com/firearms/rifles/">Rifles</a>
+                <a  href="https://store.theshootingcentre.com/firearms/shotguns/">Shotguns</a>
+              </div>
+          </div>
+        </div>
+        <!-- Optics -->
+        <div>
+          <button type="button" class="w-full mobileToggle flex items-center justify-between">
+            <span>Optics</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+            <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+              <span>Optics</span>        
+            </button>
+              <div class="mt-5 flex flex-col space-y-2.5">
+                <a href="https://store.theshootingcentre.com/optics/red-dot-sights/">Red Dot Sights</a>
+                <a href="https://store.theshootingcentre.com/optics/riflescopes/">Riflescopes</a>
+                <a href="https://store.theshootingcentre.com/optics/spotting-scopes/">Spotting Scopes</a>
+                <a href="https://store.theshootingcentre.com/optics/binoculars/">Binoculars</a>
+                <a href="https://store.theshootingcentre.com/optics/monoculars/">Monoculars</a>
+                <a href="https://store.theshootingcentre.com/optics/rangefinders/">Rangefinders</a>
+                <a href="https://store.theshootingcentre.com/optics/night-vision/">Night Vision</a>
+                <a href="https://store.theshootingcentre.com/optics/thermal-imaging/">Thermal Imaging</a>
+              </div>
+          </div>
+        </div>
+
+        <!-- Ammunition -->
+        <div>
+          <button type="button" class="w-full mobileToggle flex items-center justify-between">
+            <span>Ammunition</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+            <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+              <span>Ammunition</span>        
+            </button>
+              <div class="mt-5 flex flex-col space-y-2.5">
+                <a href="https://store.theshootingcentre.com/ammunition/rimfire/">Rimfire</a>
+                <a href="https://store.theshootingcentre.com/ammunition/centrefire/">Centrefire</a>
+                <a href="https://store.theshootingcentre.com/ammunition/shotshell/">Shotshell</a>
+              </div>
+          </div>
+        </div>
+
+        <!-- Reloading -->
+        <div>
+          <button type="button" class="w-full mobileToggle flex items-center justify-between">
+            <span>Reloading</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+            <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+              <span>Reloading</span>        
+            </button>
+              <div class="mt-5 flex flex-col space-y-2.5">
+                <a  href="https://store.theshootingcentre.com/reloading/bullets/">Bullets</a>
+                <a  href="https://store.theshootingcentre.com/reloading/brass/">Brass</a>
+                <a  href="https://store.theshootingcentre.com/reloading/powder/">Powder</a>
+                <a  href="https://store.theshootingcentre.com/reloading/primers/">Primers</a>
+                <a  href="https://store.theshootingcentre.com/reloading/equipment/">Equipment</a>
+              </div>
+          </div>
+        </div>
+         <!-- Parts &amp; Accessories -->
+         <div>
+            <button type="button" class="w-full mobileToggle flex items-center justify-between">
+              <span>Parts &amp; Accessories</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>          
+            </button>
+            <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+              <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>              
+                <span>Parts &amp; Accessories</span>        
+              </button>
+                <div class="mt-5 flex flex-col space-y-2.5">
+                  <!-- Firearm Parts  -->
+                  <div>
+                    <button type="button" class="w-full mobileToggle flex items-center justify-between">
+                      <span>Firearm Parts </span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>          
+                    </button>
+                    <div class="absolute hidden inset-x-0 top-0 h-full bg-brand-gray-100 z-10">
+                      <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>              
+                        <span>Firearm Parts </span>        
+                      </button>
+                        <div class="mt-5 flex flex-col space-y-2.5 overflow-auto">
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/barrels/">Barrels</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/bolt-assembly/">Bolt Assembly</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/bolt-catch-release/">Bolt Catch / Release</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/calibre-conversion/">Calibre Conversion</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/charging-handles/">Charging Handles</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/choke-tubes/">Choke Tubes</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/gas-system/">Gas System</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/grips/">Grips</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/handguards-rails/">Handguards &amp; Rails</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/mag-catch-release/">Mag Catch / Release</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/magazines/">Magazines</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/magwells/">Magwells</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/muzzle-devices/">Muzzle Devices</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/parts-kits/">Parts Kits</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/rail-attachments/">Rail Attachments</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/receivers/">Receivers</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/recoil-assembly/">Recoil Assembly</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/recoil-pads/">Recoil Pads</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/safeties/">Safeties</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/sights/">Sights</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/slide-catch-release/">Slide Catch / Release</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/slides/">Slides</a>
+                        </div>
+                        <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/stocks-chassis/">Stocks &amp; Chassis</a>
+                        <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/trigger-group/">Trigger Group</a>
+                        <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/trigger-guards/">Trigger Guards</a>
+                        <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/misc/">Misc.</a>
+                    </div>
+                  </div>
+
+
+                  <!-- Optic Accessories -->
+                  <div>
+                    <button type="button" class="w-full mobileToggle flex items-center justify-between">
+                      <span>Optic Accessories</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>          
+                    </button>
+                    <div class="absolute hidden inset-x-0 top-0 h-full bg-brand-gray-100 z-10">
+                      <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>              
+                        <span>Optic Accessories</span>        
+                      </button>
+                        <div class="mt-5 flex flex-col space-y-2.5">         
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/bubble-levels/">Bubble Levels</a>
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/cleaning-supplies/">Cleaning Supplies</a>
+                                
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/lens-caps-covers-cases/">Lens Caps, Covers, &amp; Cases</a>
+                                        
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/magnifiers/">Magnifiers</a>
+                                            
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/mounting-solutions/">Mounting Solutions</a>                
+                          
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/throw-levers/">Throw Levers</a>                       
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/tripods-mounts/">Tripods &amp; Mounts</a>
+
+                          <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/misc/">Misc.</a>
+                        </div>
+
+
+                        
+
+                    </div>
+                  </div>
+                  <!-- Shooting Accessories -->
+                  <div>
+                    <button type="button" class="w-full mobileToggle flex items-center justify-between">
+                      <span>Shooting Accessories</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                      </svg>          
+                    </button>
+                    <div class="absolute hidden inset-x-0 top-0 h-full bg-brand-gray-100 z-10">
+                      <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                        </svg>              
+                        <span>Shooting Accessories</span>        
+                      </button>
+                        <div class="mt-5 flex flex-col space-y-2.5">
+                          <a  href="https://store.theshootingcentre.com/reloading/bullets/">Bullets</a>
+                          <a  href="https://store.theshootingcentre.com/reloading/brass/">Brass</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Lifestyle -->
+        <div>
+          <button type="button" class="w-full mobileToggle flex items-center justify-between">
+            <span>Lifestyle</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>          
+          </button>
+          <div class="absolute hidden inset-x-5 top-5 h-full bg-brand-gray-100 z-10 overflow-auto">
+            <button type="button" class="mobileToggleX w-full flex items-center text-brand-yellow-100 border-b border-brand-gray-150 pb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+              <span>Lifestyle</span>        
+            </button>
+              <div class="mt-5 flex flex-col space-y-2.5">
+                <a  href="https://store.theshootingcentre.com/reloading/bullets/">Bullets</a>
+                <a  href="https://store.theshootingcentre.com/reloading/brass/">Brass</a>
+                <a  href="https://store.theshootingcentre.com/reloading/powder/">Powder</a>
+                <a  href="https://store.theshootingcentre.com/reloading/primers/">Primers</a>
+                <a  href="https://store.theshootingcentre.com/reloading/equipment/">Equipment</a>
+              </div>
+          </div>
+        </div>
+
+        <a href="#" class="block uppercase hover:text-brand-yellow-100">Sale</a>
+        <a href="./contact.html" class="block pt-5 border-t border-brand-gray-150">Account</a>
+
+      </div>
+    </div>
+    <!-- top-swiper -->
     <div class="menu absolute left-0 w-full -translate-y-full bg-white text-brand-gray-300 transition duration-500 ease-linear z-30">
       <div class="fixed top-0 left-0 w-full flex items-center bg-brand-gray-100 gap-5 p-4 z-30">
         <a href="#" class="w-28">
@@ -48,180 +304,178 @@
           <button type="button" dfd-click="click-suggestion" dfd-value-term="surplus">surplus</button>
         </div>
 
-        <div class="flex items-center overflow-hidden">
+        <div class="hidden lg:flex items-center overflow-hidden">
           <!-- Prev -->
           <button type="button" class="swiper-button-prev-1 text-brand-yellow-100">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
             </svg>              
           </button>
-          <div class="swiper assets relative flex items-center">
-            
-           <div class="swiper-wrapper assets-items">
-             <!-- 1 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 2 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 3 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-100">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 4 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-100">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 5 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 6 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 7 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 8 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 9 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-             <!-- 10 -->
-             <div class="swiper-slide">
-               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
-                 <div class="h-48">
-                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
-                 </div>
-                 <p>
-                   Tikka T3x Compact Tactical Rifle
-                 </p>
-                 <button type="button" class="opacity-0">
-                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
-                 </button>
-               </a>
-             </div>
-           </div>
-           
+          <div class="swiper assets relative flex items-center">       
+            <div class="swiper-wrapper assets-items">
+              <!-- 1 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 2 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 3 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 4 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 5 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 6 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 7 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 8 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 9 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+              <!-- 10 -->
+              <div class="swiper-slide">
+                <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                  <div class="h-48">
+                    <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                  </div>
+                  <p>
+                    Tikka T3x Compact Tactical Rifle
+                  </p>
+                  <button type="button" class="opacity-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-            <!-- next -->
-            <button type="button" class="swiper-button-next-1 text-brand-yellow-100">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>                          
-            </button>
+          <!-- next -->
+          <button type="button" class="swiper-button-next-1 text-brand-yellow-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>                          
+          </button>
         </div>
       </div>
     </div>
     <!-- top info-->
-    <a href="#" class="block font-arial font-bold text-sm text-center bg-brand-gray-200 hover:text-brand-yellow-100 transition-colors ease-linear underline py-1.5 px-4">
+    <a href="#" class="top-link block font-arial font-bold text-sm text-center bg-brand-gray-200 hover:text-brand-yellow-100 transition-colors ease-linear underline py-1.5 px-4">
       ⛟ Free Shipping on Orders $299+ excl. Ammo
     </a>
     <!-- middle -->
     <div class="bg-brand-gray-100">
       <div class="container mx-auto p-5">
         <div class="relative grid grid-cols-8 items-center gap-4 md:py-2.5">
-          <div class="col-span-4 xl:col-span-1 flex items-center">
+          <div class="col-span-4 xl:col-span-1 flex items-center gap-5">
             <!-- menu btn for mobile -->
-            <button class="md:hidden burger relative w-6 h-5 mx-4" type="button">
-              <i class="absolute top-1/2 left-0 w-full h-0.5 bg-white transition-all ease-linear duration-200"></i>
+            <button class="md:hidden burger relative w-7 h-5" type="button">
+              <i class="absolute top-1/2 left-0 w-full h-0.5 bg-brand-yellow-100 transition-all ease-linear duration-200"></i>
             </button>
              <!-- logo -->
             <a href="#">
@@ -245,6 +499,7 @@
               </svg>              
               <span class="hidden xl:inline-block">Account</span>              
             </a>
+            <!-- card -->
             <div class="">
               <button type="button" class="dropdown-button border-none flex items-center space-x-4">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 hover:text-brand-yellow-100 transition-colors ease-linear">
@@ -580,7 +835,7 @@
     <div class="max-w-2xl md:max-w-[840px] mx-auto px-5 mt-5">
       <h1 class="text-center text-[28px]/none">Sign in</h1>
       <div class="grid md:grid-cols-3 gap-5 mt-5">
-        <div class="text-sm bg-white shadow-card p-5">
+        <div class="text-sm bg-white border border-brand-gray-200 p-5">
           <h2 class="text-xl/snug">New Customer?</h2>
           <p class="mt-3">
             Create an account with us and you'll be able to:
@@ -597,7 +852,7 @@
             Create Account
           </a>
         </div>
-        <form class="contact order-first md:order-none md:col-span-2 bg-brand-gray-200 shadow-card space-y-7 p-5">
+        <form class="contact order-first md:order-none md:col-span-2 bg-brand-gray-200 border border-brand-gray-200 space-y-7 p-5">
             <p class="text-xl text-center">Sign in</p>
             <div class="space-y-2">
               <label for="email">Email Address:</label>
