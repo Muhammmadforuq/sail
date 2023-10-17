@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar{
+  @apply !w-0
+}
+
+.swiper-pagination-8 .swiper-pagination-bullet{
+	@apply !w-2.5 !h-2.5 !border !border-brand-gray-100 !bg-transparent
+}
+.swiper-pagination-8 .swiper-pagination-bullet-active{
+	@apply !bg-brand-gray-100
+}
+
+.swiper-pagination-7 .swiper-pagination-bullet{
+	@apply !w-2.5 !h-2.5 !border !border-brand-gray-100 !bg-transparent
+}
+.swiper-pagination-7 .swiper-pagination-bullet-active{
+	@apply !bg-brand-gray-100
+}
+
+.swiper-pagination-1 .swiper-pagination-bullet{
+	@apply !w-2.5 !h-2.5 !border !border-brand-gray-100 !bg-transparent
+}
+.swiper-pagination-1 .swiper-pagination-bullet-active{
+	@apply !bg-brand-gray-100
+}
+
+.swiper-pagination-2 .swiper-pagination-bullet{
+	@apply !w-2.5 !h-2.5 !border !border-brand-gray-100 !bg-transparent
+}
+.swiper-pagination-2 .swiper-pagination-bullet-active{
+	@apply !bg-brand-gray-100
+}
+
+
+
+.swiper-button-disabled{
+	@apply !opacity-20;
+}
+@layer components {
+  
+  body{
+    @apply font-open-sans text-smm text-brand-gray-100 bg-brand-backwall;
+  }
+
+  .dropdown-button{
+    @apply flex items-center border-b-2 border-b-transparent focus-within:border-brand-yellow-100 lg:hover:text-brand-yellow-100 space-x-2.5;
+  }
+  .header-link a{
+    @apply block hover:text-brand-yellow-100 transition-colors ease-linear;
+  }
+
+	.border-line button{
+		@apply block underline decoration-transparent hover:decoration-brand-gray-300
+	}
+	.assets-items button{
+		@apply relative w-10 h-10 flex items-center justify-center bg-brand-yellow-100 rounded ml-auto;
+	
+	}
+
+	.featured a{
+		@apply block !line-clamp-2 text-smm hover:text-brand-yellow-100 transition-colors ease-linear;
+	}
+	.footer-link a{
+		@apply text-sm hover:text-brand-gray-400 transition-colors ease-linear
+	}
+
+
+	.btn{
+		@apply font-semibold text-xs md:text-sm text-center transition-colors ease-linear rounded;
+	}
+	.btn-yellow{
+		@apply block font-semibold text-center bg-brand-yellow-100 hover:bg-brand-yellow-200 p-3;
+	}
+
+	.btn-white-outline{
+		@apply h-11 hidden lg:flex justify-center items-center border border-brand-gray-200 hover:border-brand-yellow-100 space-x-2;
+	}
+
+	.btn-red{
+		@apply absolute top-0 left-0 font-bold text-xss bg-brand-red text-white uppercase px-3 py-0.5;
+	
+	}
+
+	.contact label{
+		@apply block font-semibold capitalize text-sm;
+	}
+
+	.contact input[type=text],
+	.contact input[type=password],
+	.contact input[type=email], 
+	.contact select{
+		@apply w-full text-sm border-brand-gray-200 focus:ring-brand-yellow-100 rounded py-2.5 px-3.5;
+		
+	} 
+
+	.contact small{
+		@apply font-semibold text-[10px]/4;
+		
+	} 
+	/* tab css */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tab.active {
+  color: #fda239;
+}
+
+
+
+  /* burger */
+.burger i::after,
+.burger i::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fda239;
+	transition-duration: 0.225s;
+}
+.burger i::after {
+	top: 8px;
+}
+.burger i::before {
+	bottom: 8px;
+}
+.burger_active i {
+	background: none;
+}
+.burger_active i::after {
+	top: 0;
+	transform: rotate(45deg);
+}
+.burger_active i::before {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
+}
+
+.shape::after{
+border: inset 8px;
+content: "";
+display: block;
+height: 0;
+width: 0;
+border-color: transparent transparent #fff transparent;
+border-bottom-style: solid;
+bottom: 100%;
+right: -14px;
+top: -90%;
+position: absolute;
+}

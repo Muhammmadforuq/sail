@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <title>CSC || Optics</title>
+</head>
+<body>
+  <header class="relative">
+    <div class="menu absolute left-0 w-full -translate-y-full bg-white text-brand-gray-300 transition duration-500 ease-linear z-30">
+      <div class="fixed top-0 left-0 w-full flex items-center bg-brand-gray-100 gap-5 p-4 z-30">
+        <a href="#" class="w-28">
+          <img src="./image/logo.png" alt="">
+        </a>
+        <form class="relative flex-1">
+          <input type="search" class="w-full border-x-0 border-t-0 !border-b border-b-brand-yellow-100 focus:border-b-brand-yellow-100 focus:ring-0 py-2.5 px-8" placeholder="Search...">
+    
+          <svg class="absolute top-1/2 -translate-y-1/2 left-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path d="M0 0h24v24H0V0z" fill="none"></path><path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+          </svg>
+          
+          <svg class="absolute top-1/2 -translate-y-1/2 right-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 14.2 14.47 16 12 16s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V20c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"></path>
+          </svg>
+        </form>
+    
+        <button type="button" class="menuBtn bg-white/50">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>  
+        </button>
+      </div>
+      <div class="relative lg:flex items-start px-6 md:px-12 mt-20 space-y-6 lg:space-y-0 lg:space-x-6 p-6"> 
+        <div class="border-line w-40 shrink-0 space-y-5">
+          <h3 class="font-bold text-lg">Popular searches</h3>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="10/22">10/22</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="tikka">tikka</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="tikka t3x">tikka t3x</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="bergara">bergara</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="ruger 10/22">ruger 10/22</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="magpul">magpul</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="sako">sako</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="sks">sks</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="bipod">bipod</button>
+          <button type="button" dfd-click="click-suggestion" dfd-value-term="surplus">surplus</button>
+        </div>
+
+        <div class="flex items-center overflow-hidden">
+          <!-- Prev -->
+          <button type="button" class="swiper-button-prev-1 text-brand-yellow-100">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>              
+          </button>
+          <div class="swiper assets relative flex items-center">
+            
+           <div class="swiper-wrapper assets-items">
+             <!-- 1 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 2 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 3 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-100">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 4 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-100">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 5 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 6 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 7 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 8 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 9 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+             <!-- 10 -->
+             <div class="swiper-slide">
+               <a href="#" class="block border border-brand-gray-50 hover:border-brand-yellow-100 rounded space-y-3 p-6">
+                 <div class="h-48">
+                   <img class="w-full h-full object-cover" src="./image/gun.jpg" alt="">
+                 </div>
+                 <p>
+                   Tikka T3x Compact Tactical Rifle
+                 </p>
+                 <button type="button" class="opacity-0">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1)"><path d="M21 4H2v2h2.3l3.28 9a3 3 0 0 0 2.82 2H19v-2h-8.6a1 1 0 0 1-.94-.66L9 13h9.28a2 2 0 0 0 1.92-1.45L22 5.27A1 1 0 0 0 21.27 4 .84.84 0 0 0 21 4zm-2.75 7h-10L6.43 6h13.24z"></path><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="16.5" cy="19.5" r="1.5"></circle></svg>
+                 </button>
+               </a>
+             </div>
+           </div>
+           
+          </div>
+            <!-- next -->
+            <button type="button" class="swiper-button-next-1 text-brand-yellow-100">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>                          
+            </button>
+        </div>
+      </div>
+    </div>
+    <!-- top info-->
+    <a href="#" class="block font-arial font-bold text-sm text-center bg-brand-gray-200 hover:text-brand-yellow-100 transition-colors ease-linear underline py-1.5 px-4">
+      ⛟ Free Shipping on Orders $299+ excl. Ammo
+    </a>
+    <!-- middle -->
+    <div class="bg-brand-gray-100">
+      <div class="container mx-auto p-5">
+        <div class="relative grid grid-cols-8 items-center gap-4 md:py-2.5">
+          <div class="col-span-4 xl:col-span-1 flex items-center">
+            <!-- menu btn for mobile -->
+            <button class="md:hidden burger relative w-6 h-5 mx-4" type="button">
+              <i class="absolute top-1/2 left-0 w-full h-0.5 bg-white transition-all ease-linear duration-200"></i>
+            </button>
+             <!-- logo -->
+            <a href="#">
+              <img src="./image/logo.png" alt="">
+            </a>
+          </div>
+          <!-- search -->
+          <form action="#" class="menuBtn order-last xl:order-none col-span-8 xl:col-span-4 relative md:max-w-lg w-full rounded overflow-hidden xl:pl-3">
+            <input type="text" placeholder="Search by keyword, brand or SKU" 
+            class="w-full border-none focus:ring-0 text-sm py-2.5 pl-3.5 rounded-l pr-20">
+            <button class="absolute right-0 inset-y-0 bg-brand-yellow-100 hover:bg-brand-yellow-200 transition-colors ease-linear p-3 overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>              
+            </button>
+          </form>
+          <div class="col-span-4 xl:col-span-3 flex items-center justify-end text-white space-x-5">
+            <a href="#" class="hidden md:flex items-center font-bold hover:text-brand-yellow-100 transition-colors ease-linear gap-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+              </svg>              
+              <span class="hidden xl:inline-block">Account</span>              
+            </a>
+            <div class="">
+              <button type="button" class="dropdown-button border-none flex items-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 hover:text-brand-yellow-100 transition-colors ease-linear">
+                  <path d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+                </svg>              
+                <span class="pointer-events-none w-8 h-8 text-white shrink-0 leading-8 bg-brand-yellow-100 rounded-full">0</span>              
+              </button>
+              <div class="absolute hidden right-0 top-10 text-brand-gray-100 max-w-xs w-full text-sm bg-white p-5 z-20 mt-7">
+                <h2 class="shape relative text-xl pb-3">Your card</h2>
+                <div class="overflow-scroll">
+                  <div class="h-48 overflow-scroll">
+                    <div class="border-t border-brand-gray-200 space-y-2 py-4">
+                      <div class="flex items-start space-x-2">
+                        <div class="w-14 h-14  shrink-0">
+                          <img class="w-full h-full object-cover" src="./image/ISS3182-001__98279.jpg" alt="">
+                        </div>
+                        <div class="space-y-1.5">
+                          <a class="block" href="#">
+                            ZEISS Conquest V4 3-12x56 SFP Ri…
+                          </a>
+                          <p>ISS3182</p>
+                          <div class="flex items-center gap-1.5">
+                            <input type="tel" class="w-8 h-6 border-brand-gray-200 focus:ring-0" value="1">
+                            <span>×$1,500.00</span>
+                            <button type="button" class="bg-brand-yellow-100 rounded-full ml-auto">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>              
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border-t border-brand-gray-200 space-y-2 py-4">
+                      <div class="flex items-start space-x-2">
+                        <div class="w-14 h-14  shrink-0">
+                          <img class="w-full h-full object-cover" src="./image/ISS3182-001__98279.jpg" alt="">
+                        </div>
+                        <div class="space-y-1.5">
+                          <a class="block" href="#">
+                            ZEISS Conquest V4 3-12x56 SFP Ri…
+                          </a>
+                          <p>ISS3182</p>
+                          <div class="flex items-center gap-1.5">
+                            <input type="tel" class="w-8 h-6 border-brand-gray-200 focus:ring-0" value="1">
+                            <span>×$1,500.00</span>
+                            <button type="button" class="bg-brand-yellow-100 rounded-full ml-auto">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3.5 h-3.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                              </svg>              
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between border-t border-brand-gray-200 py-1.5">
+                  <p> Total Items:</p>
+                  <p>3</p>
+                </div>
+            
+                <div class="flex items-center justify-between border-t border-brand-gray-200 py-1.5">
+                  <p>Subtotal:</p>
+                  <p>$1,584.00</p>
+                </div>
+            
+                <div class="flex items-center justify-between border-t border-brand-gray-200 py-1.5">
+                  <p>Subtotal:</p>
+                  <p>$1,584.00</p>
+                </div>
+            
+                <div class="flex items-center justify-between border-t border-brand-gray-200 py-1.5">
+                  <p>GST (5%):</p>
+                  <p>$79.20</p>
+                </div>
+            
+                <div class="flex items-center justify-between border-t border-brand-gray-200 py-1.5">
+                  <p>Grand total:</p>
+                  <p>$1,663.20</p>
+                </div>
+            
+                <div class="grid grid-cols-2 gap-4 mt-1.5">
+                  <button type="button" class="btn btn-white-outline !block h-10">View Cart</button>
+                  <button type="button" class="btn btn-yellow h-10">Check out</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bottom -->
+    <div class="bg-brand-gray-200 hidden md:block">
+      <div class="container mx-auto flex items-start xl:items-center justify-between font-bold gap-3 xl:space-x-5">
+        <div class="header-link flex items-start xl:items-center flex-wrap gap-x-3 xl:gap-x-5 px-5">
+          <!-- Firearms -->
+          <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">Firearms</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="w-64 hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5 z-10">
+              <a href="https://store.theshootingcentre.com/firearms/pistols/">Pistols</a>
+              <a href="https://store.theshootingcentre.com/firearms/rifles/">Rifles</a>
+              <a href="https://store.theshootingcentre.com/firearms/shotguns/">Shotguns</a>
+            </div>
+          </div>
+          <!-- Optics -->
+          <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">Optics</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="w-64 hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5 z-10">
+              <a href="https://store.theshootingcentre.com/optics/red-dot-sights/">Red Dot Sights</a>
+              <a href="https://store.theshootingcentre.com/optics/riflescopes/">Riflescopes</a>
+              <a href="https://store.theshootingcentre.com/optics/spotting-scopes/">Spotting Scopes</a>
+              <a href="https://store.theshootingcentre.com/optics/binoculars/">Binoculars</a>
+              <a href="https://store.theshootingcentre.com/optics/monoculars/">Monoculars</a>
+              <a href="https://store.theshootingcentre.com/optics/rangefinders/">Rangefinders</a>
+              <a href="https://store.theshootingcentre.com/optics/night-vision/">Night Vision</a>
+              <a href="https://store.theshootingcentre.com/optics/thermal-imaging/">Thermal Imaging</a>
+            </div>
+          </div>
+          <!-- Ammunition -->
+          <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">Ammunition</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="w-64 hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5 z-10">
+              <a href="https://store.theshootingcentre.com/ammunition/rimfire/">Rimfire</a>
+              <a href="https://store.theshootingcentre.com/ammunition/centrefire/">Centrefire</a>
+              <a href="https://store.theshootingcentre.com/ammunition/shotshell/">Shotshell</a>
+            </div>
+          </div>
+          <!-- Reloading -->
+          <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">Reloading</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="w-64 hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5">
+              <a href="https://store.theshootingcentre.com/reloading/bullets/">Bullets</a>
+              <a href="https://store.theshootingcentre.com/reloading/brass/">Brass</a>
+              <a href="https://store.theshootingcentre.com/reloading/powder/">Powder</a>
+              <a href="https://store.theshootingcentre.com/reloading/primers/">Primers</a>
+              <a href="https://store.theshootingcentre.com/reloading/equipment/">Equipment</a>
+            </div>
+          </div>
+          <!-- Parts & Accessories  -->
+          <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">Parts & Accessories </span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5">
+              <!-- Firearm Parts -->
+              <div class="w-64">
+                <button class="dropdown-button border-none w-full justify-between">
+                  <span class="pointer-events-none">Firearm Parts</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                    
+                </button>
+                <div class="w-64 absolute top-0 left-full bg-brand-gray-200 space-y-2.5 p-5">
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/barrels/">Barrels</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/bolt-assembly/">Bolt Assembly</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/bolt-catch-release/">Bolt Catch / Release</a>
+                  <a href="https://store.theshootingcentre.com/reloading/primers/">Primers</a>
+                  <a href="https://store.theshootingcentre.com/reloading/equipment/">Equipment</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/calibre-conversion/">Calibre Conversion</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/charging-handles/">Charging Handles</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/choke-tubes/">Choke Tubes</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/gas-system/">Gas System</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/grips/">Grips</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/handguards-rails/">Handguards &amp; Rails</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/mag-catch-release/">Mag Catch / Release</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/magazines/">Magazines</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/magwells/">Magwells</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/muzzle-devices/">Muzzle Devices</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/parts-kits/">Parts Kits</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/rail-attachments/">Rail Attachments</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/receivers/">Receivers</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/recoil-assembly/">Recoil Assembly</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/recoil-pads/">Recoil Pads</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/safeties/">Safeties</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/sights/">Sights</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/slide-catch-release/">Slide Catch / Release</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/slides/">Slides</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/stocks-chassis/">Stocks &amp; Chassis</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/trigger-group/">Trigger Group</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/trigger-guards/">Trigger Guards</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/firearm-parts/misc/">Misc.</a>
+                </div>
+              </div>
+              <!-- Optic Accessories -->
+              <div class="w-64">
+                <button class="dropdown-button border-none w-full justify-between">
+                  <span class="pointer-events-none">Optic Accessories</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                    
+                </button>
+                <div class="w-64 absolute top-0 left-full bg-brand-gray-200 space-y-2.5 p-5">
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/bubble-levels/">Bubble Levels</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/cleaning-supplies/">Cleaning Supplies</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/lens-caps-covers-cases/">Lens Caps, Covers, &amp; Cases</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/magnifiers/">Magnifiers</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/mounting-solutions/">Mounting Solutions</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/throw-levers/">Throw Levers</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/tripods-mounts/">Tripods &amp; Mounts</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/optic-accessories/misc/">Misc.</a>
+                </div>
+              </div>
+              <!-- Shooting Accessories -->
+              <div class="w-64">
+                <button class="dropdown-button border-none w-full justify-between">
+                  <span class="pointer-events-none">Shooting Accessories</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                    
+                </button>
+                <div class="w-64 absolute top-0 left-full bg-brand-gray-200 space-y-2.5 p-5">
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/armour-carriers-security/">Armour, Carriers, &amp; Security</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/chamber-flags/">Chamber Flags</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/cleaning-supplies/">Cleaning Supplies</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/electronics/">Electronics</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/eyes-ears/">Eyes &amp; Ears</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/gun-belts/">Gun Belts</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/gunsmithing/">Gunsmithing</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/holsters/">Holsters</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/lights-lasers/">Lights &amp; Lasers</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/mag-loaders/">Mag Loaders</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/pods-sticks/">Pods &amp; Sticks</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/pouches/">Pouches</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/range-bags/">Range Bags</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/shooting-rests/">Shooting Rests</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/side-saddles/">Side Saddles</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/slings-swivels-mounts/">Slings, Swivels, &amp; Mounts</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/snap-caps/">Snap Caps</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/storage-cases/">Storage &amp; Cases</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/targets/">Targets</a>
+                  <a href="https://store.theshootingcentre.com/parts-accessories/shooting-accessories/misc/">Misc.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+            <!-- lifestyle  -->
+            <div class="relative">
+            <button class="dropdown-button py-3">
+              <span class="pointer-events-none">lifestyle</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg> 
+            </button>
+            <div class="hidden absolute top-12 left-0 bg-brand-gray-200 space-y-2.5 p-5">
+              <!-- Apparel -->
+              <div class="w-64">
+                <button class="dropdown-button border-none w-full justify-between">
+                  <span class="pointer-events-none">Apparel</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                    
+                </button>
+                <div class="w-64 h-full absolute top-0 left-full bg-brand-gray-200 space-y-2.5 p-5">
+                  <a href="https://store.theshootingcentre.com/lifestyle/apparel/tops/">Tops</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/apparel/bottoms/">Bottoms</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/apparel/accessories/">Accessories</a>
+                </div>
+              </div>
+              <a href="https://store.theshootingcentre.com/lifestyle/bags-packs-pouches/">Bags, Packs, &amp; Pouches</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/books-manuals/">Books &amp; Manuals</a>
+              <!-- Camp &amp; Hike -->
+              <div class="w-64">
+                <button class="dropdown-button border-none w-full justify-between">
+                  <span class="pointer-events-none">Camp &amp; Hike</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-3 h-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                    
+                </button>
+                <div class="w-64 h-full absolute top-0 left-full bg-brand-gray-200 space-y-2.5 p-5">
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/camp-kitchen/">Camp Kitchen</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/coolers-food-storage/">Coolers &amp; Food Storage</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/food-drink/">Food &amp; Drink</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/stoves/">Stoves</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/trekking-poles/">Trekking Poles</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/water/">Water</a>
+                  <a href="https://store.theshootingcentre.com/lifestyle/camp-hike/misc/">Misc.</a>
+                </div>
+              </div>
+              <a href="https://store.theshootingcentre.com/lifestyle/hunting-gear/">Hunting Gear</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/knives-tools/">Knives &amp; Tools</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/medical-first-aid/">Medical &amp; First Aid</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/novelty/">Novelty</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/patches-stickers/">Patches &amp; Stickers</a>
+              <a href="https://store.theshootingcentre.com/lifestyle/misc/">Misc.</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex xl:items-center justify-end gap-3 xl:gap-5 py-3 xl:py-0 px-5">
+          <p class="whitespace-nowrap cursor-pointer hover:text-brand-yellow-100 transition-colors ease-linear"> 
+            Need Help? +1 (403) 451-1777
+          </p>
+          <a class="whitespace-nowrap hover:text-brand-yellow-100 transition-colors ease-linear" href="#">Your Lists</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- hero -->
+    <div class="container mx-auto mt-5 px-5"> 
+      <div class="grid md:grid-cols-4 gap-5">
+        <div class="hidden md:block">
+            <p>Refine by</p>
+            <p class="mt-2.5">No filters applied</p>
+            <!-- Accordion -->
+          <div class="accordion space-y-2 mt-7">
+            <!-- Brand -->
+            <section>
+              <div>
+                <button type="button"
+                  class="accordionBtn w-full flex justify-between items-center cursor-pointer transition ease-linear duration-700">
+                  <p class="font-bold text-sm pointer-events-none">Brand</p>
+                  <!-- plus -->
+                  <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!-- minus -->
+                  <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5">
+                <div class="space-x-2 mt-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Aimpoint<span>(4)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#"> American Defense Mfg.<span>(1)</span></a>
+                </div>
+
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Blaser<span>(1)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Browning<span>(1)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Burris<span>(1)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Bushnell<span>(1)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">EOTECH<span>(1)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">HOLOSUN<span>(7)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Leupold.<span>(1)</span></a>
+                </div>
+
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">Primary Arms<span>(1)</span></a>
+                </div>
+
+              </div>
+            </section>
+            <!-- Magnification -->
+            <section>
+              <div>
+                <button type="button" class="accordionBtn w-full flex justify-between items-center cursor-pointer transition ease-linear duration-700">
+                  <p class="font-bold text-sm">Magnification</p>
+                  <!-- plus -->
+                  <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!-- minus -->
+                  <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5">
+                <div class="space-x-2 mt-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">1x<span>(42)</span></a>
+                </div>
+                <div class="space-x-2">
+                  <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                  <a href="#">5x<span>(1)</span></a>
+                </div>
+
+              </div>
+            </section>
+             <!--Rating -->
+            <section>
+              <div>
+                <button type="button" class="accordionBtn w-full flex justify-between items-center cursor-pointer transition ease-linear duration-700">
+                  <p class="font-bold text-sm">Rating</p>
+                  <!-- plus -->
+                  <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                  </svg>
+                  <!-- minus -->
+                  <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                  </svg>
+                </button>
+              </div>
+              <div class="w-full h-0 text-xss transition-[height] duration-200 ease-in overflow-hidden">
+                <div class="space-y-1 mt-2">
+                  <a href="#" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    
+                      &amp; up
+                    <span class="inline-block pl-0.5">(6)</span>
+                  </a>
+                  <a href="#" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    
+                      &amp; up
+                    <span class="inline-block pl-0.5">(6)</span>
+                  </a>
+                  <a href="#" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    
+                      &amp; up
+                    <span class="inline-block pl-0.5">(6)</span>
+                  </a>
+                  <a href="#" class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    
+                  &amp; up
+                    <span class="inline-block pl-0.5">(6)</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+          </div>
+        </div>
+        <div class="md:col-span-3">
+          <!-- breakcramb -->
+          <div class="hidden md:flex items-center text-xss space-x-2">
+            <a href="./index.html" class="underline">Home</a>
+            <span>/</span>
+            <a href="optics.html" class="underline">Optics</a>
+            <span>/</span>
+            <p>Red Dot Sights</p>
+          </div>
+          <!-- heading -->
+          <div class="md:flex items-center space-y-2 md:space-x-2 md:mt-7">
+            <h1 class="text-[28px]/8">Red Dot Sights</h1>
+            <p class="text-xss">(Showing 12 of 48)</p>
+          </div>
+          <!-- select -->
+          <div class="relative grid grid-cols-2 sm:flex justify-between md:justify-end items-center text-xss gap-2 mt-5">
+            <!-- filter Mobile -->
+            <div class="md:hidden">
+              <button type="button" class="dropdown-button w-full justify-center sm:w-auto font-bold bg-brand-yellow-100 text-sm rounded py-2.5 px-9">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
+                  <path fill-rule="evenodd" d="M3.792 2.938A49.069 49.069 0 0112 2.25c2.797 0 5.54.236 8.209.688a1.857 1.857 0 011.541 1.836v1.044a3 3 0 01-.879 2.121l-6.182 6.182a1.5 1.5 0 00-.439 1.061v2.927a3 3 0 01-1.658 2.684l-1.757.878A.75.75 0 019.75 21v-5.818a1.5 1.5 0 00-.44-1.06L3.13 7.938a3 3 0 01-.879-2.121V4.774c0-.897.64-1.683 1.542-1.836z" clip-rule="evenodd" />
+                </svg>
+                
+                <span class="pointer-events-none">Filter</span>              
+              </button>
+
+              <div class="hidden absolute top-4 inset-x-0 h-full z-20 -mt-0.5">
+                <div class="accordion mt-7 bg-brand-gray-400">
+                  <!-- Brand -->
+                  <section>
+                    <div>
+                      <button type="button"
+                        class="accordionBtn w-full flex justify-between items-center border-b border-brand-gray-50 cursor-pointer transition ease-linear duration-700 py-4 px-3">
+                        <p class="font-bold text-sm pointer-events-none">Brand</p>
+                        <!-- plus -->
+                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                        <!-- minus -->
+                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                        </svg>
+                      </button>
+                    </div>
+      
+                    <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5 px-3.5">
+                      <div class="space-x-2 mt-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Aimpoint<span>(4)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#"> American Defense Mfg.<span>(1)</span></a>
+                      </div>
+      
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Blaser<span>(1)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Browning<span>(1)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Burris<span>(1)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Bushnell<span>(1)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">EOTECH<span>(1)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">HOLOSUN<span>(7)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Leupold.<span>(1)</span></a>
+                      </div>
+      
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">Primary Arms<span>(1)</span></a>
+                      </div>
+      
+                    </div>
+                  </section>
+                  <!-- Magnification -->
+                  <section>
+                    <div>
+                      <button type="button" class="accordionBtn w-full flex justify-between border-b border-brand-gray-50 items-center cursor-pointer transition ease-linear duration-700 py-4 px-3">
+                        <p class="font-bold text-sm">Magnification</p>
+                        <!-- plus -->
+                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                        <!-- minus -->
+                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5 px-3.5">
+                      <div class="space-x-2 mt-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">1x<span>(42)</span></a>
+                      </div>
+                      <div class="space-x-2">
+                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
+                        <a href="#">5x<span>(1)</span></a>
+                      </div>
+      
+                    </div>
+                  </section>
+                   <!--Rating -->
+                  <section>
+                    <div>
+                      <button type="button" class="accordionBtn w-full flex justify-between border-b border-brand-gray-50 items-center cursor-pointer transition ease-linear duration-700 py-4 px-3">
+                        <p class="font-bold text-sm">Rating</p>
+                        <!-- plus -->
+                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
+                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
+                        </svg>
+                        <!-- minus -->
+                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
+                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="w-full h-0 text-xss transition-[height] duration-200 ease-in overflow-hidden px-3.5">
+                      <div class="space-y-1 mt-2">
+                        <a href="#" class="flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          
+                            &amp; up
+                          <span class="inline-block pl-0.5">(6)</span>
+                        </a>
+                        <a href="#" class="flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          
+                            &amp; up
+                          <span class="inline-block pl-0.5">(6)</span>
+                        </a>
+                        <a href="#" class="flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          
+                            &amp; up
+                          <span class="inline-block pl-0.5">(6)</span>
+                        </a>
+                        <a href="#" class="flex items-center pb-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          
+                        &amp; up
+                          <span class="inline-block pl-0.5">(6)</span>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+      
+                </div>
+              </div>
+            </div>
+
+            <form class="flex items-center justify-end sm:space-x-5">
+                <label class="hidden sm:block font-bold whitespace-nowrap" for="sort">Sort By:</label>
+                <select class="w-full sm:w-auto text-xss cursor-pointer border-brand-gray-200 hover:border-brand-yellow-100 rounded focus:ring-0" name="sort" id="sort" data-gtm-form-interact-field-id="0">
+                  <option value="featured">Featured Items</option>
+                  <option value="newest">Newest Items</option>
+                  <option value="bestselling">Best Selling</option>
+                  <option value="alphaasc" selected="">A to Z</option>
+                  <option value="alphadesc">Z to A</option>
+                  <option value="avgcustomerreview">By Review</option>
+                  <option value="priceasc">Price: Ascending</option>
+                  <option value="pricedesc">Price: Descending</option>
+                </select> 
+            </form>
+            <!-- links -->
+            <div class="hidden md:flex items-center space-x-2.5">
+              <span class="font-bold">Show</span>
+              <a href="https://store.theshootingcentre.com/optics/red-dot-sights/?limit=12" class="" data-count="12">12</a>
+              <a href="https://store.theshootingcentre.com/optics/red-dot-sights/?limit=24" class="underline" data-count="24">24</a>
+              <a href="https://store.theshootingcentre.com/optics/red-dot-sights/?limit=36" class="underline" data-count="36">36</a>
+              <a href="https://store.theshootingcentre.com/optics/red-dot-sights/?limit=48" class="underline" data-count="48">48</a>   
+            </div>
+            <button data-tab-target="#cards" type="button" class="tab active hidden lg:block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"><path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z" fill="currentColor"></path>
+              </svg>
+            </button>
+
+            <button data-tab-target="#card" type="button" class="tab  hidden lg:block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20"><path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z" fill="currentColor"></path></svg>
+            </button>
+          </div>
+
+          <!-- cards -->
+          <div id="cards" data-tab-content class="active">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 mt-5">
+              <!-- 1 -->    
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                    ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                  </a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 2 -->  
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS2661-001__39807_2.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer 
+                    <span class="inline-block font-normal pl-2">SKU: 600299-RSU</span>
+                  </h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-180-gr-sp-ammunition/" tabindex="0">Aimpoint Acro C-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- 3 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS5756-001__19931_3.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-150-gr-sp-ammunition/" tabindex="0">Aimpoint Acro P-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 4 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/19839-001__95073_4.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/federal-syntech-range-9mm-124-gr-syntech-jacket-flat-nose-ammunition/" tabindex="0">
+                    Aimpoint CompM5 Reflex 
+                  </a>
+                  <!-- star -->
+                  <div class="flex items-center gap-1.5 mt-2">
+                    <button type="button" class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    </button>
+                    <a class="text-sm underline" href="https://store.theshootingcentre.com/sellier-bellot-canadian-match-22-lr-40-gr-lrn-rimfire-ammunition/#product-reviews" tabindex="0">1 review</a>
+                  </div>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- 5 -->    
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                    ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                  </a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 6 -->  
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS2661-001__39807_2.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer 
+                    <span class="inline-block font-normal pl-2">SKU: 600299-RSU</span>
+                  </h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-180-gr-sp-ammunition/" tabindex="0">Aimpoint Acro C-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- 7 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS5756-001__19931_3.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-150-gr-sp-ammunition/" tabindex="0">Aimpoint Acro P-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 8 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/19839-001__95073_4.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/federal-syntech-range-9mm-124-gr-syntech-jacket-flat-nose-ammunition/" tabindex="0">
+                    Aimpoint CompM5 Reflex 
+                  </a>
+                  <!-- star -->
+                  <div class="flex items-center gap-1.5 mt-2">
+                    <button type="button" class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    </button>
+                    <a class="text-sm underline" href="https://store.theshootingcentre.com/sellier-bellot-canadian-match-22-lr-40-gr-lrn-rimfire-ammunition/#product-reviews" tabindex="0">1 review</a>
+                  </div>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- 9 -->    
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                    ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                  </a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 10 -->  
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS2661-001__39807_2.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer 
+                    <span class="inline-block font-normal pl-2">SKU: 600299-RSU</span>
+                  </h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-180-gr-sp-ammunition/" tabindex="0">Aimpoint Acro C-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- 11 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/ISS5756-001__19931_3.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/sellier-bellot-rifle-line-303-british-150-gr-sp-ammunition/" tabindex="0">Aimpoint Acro P-2 3.5 MOA Red Dot Reflex Sight with Integrated Acro Interface</a>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <form action="#" class="flex items-stretch">
+                      <input type="tel" value="1" min="1" autocomplete="off" class="w-12 btn btn-white-outline rounded-r-none">
+                      <input type="submit" value="Add to Cart" class="btn btn-yellow flex-1 rounded-l-none cursor-pointer">
+                    </form>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"></path>
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- 12 -->
+              <div class="relative flex flex-col bg-white shadow-card p-5">
+                <a href="#" class="block relative w-full h-40 xl:h-60">
+                  <img class="w-full h-full object-contain" src="./image/19839-001__95073_4.jpg" alt="">         
+                </a>
+                <div class="featured mt-3 pb-2">
+                  <h3 class="text-xss font-bold">Sig Sauer</h3>
+                  <a href="https://store.theshootingcentre.com/federal-syntech-range-9mm-124-gr-syntech-jacket-flat-nose-ammunition/" tabindex="0">
+                    Aimpoint CompM5 Reflex 
+                  </a>
+                  <!-- star -->
+                  <div class="flex items-center gap-1.5 mt-2">
+                    <button type="button" class="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                    </button>
+                    <a class="text-sm underline" href="https://store.theshootingcentre.com/sellier-bellot-canadian-match-22-lr-40-gr-lrn-rimfire-ammunition/#product-reviews" tabindex="0">1 review</a>
+                  </div>
+                </div>
+                <div class="pt-5 mt-auto">
+                  <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                  <div class="mt-5 lg:mt-8 space-y-2">
+                    <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                    </a>
+                    <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                      <span>Add to Your List</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                      </svg>              
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--cards row  -->
+          <div id="card" data-tab-content class="mt-5 space-y-4">
+            <!-- 1 -->    
+            <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white shadow-card gap-5 p-5">
+              <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+                <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+              </a>
+              <div class="featured lg:col-span-2 pb-2">
+                <h3 class="text-xss font-bold">Sig Sauer</h3>
+                <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                  ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                </a>
+              </div>
+              <div class="">
+                <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                <div class="mt-5 lg:mt-8 space-y-2">
+                  <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                  </a>
+                  <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                    <span>Add to Your List</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>              
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->    
+            <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white shadow-card gap-5 p-5">
+              <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+                <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+              </a>
+              <div class="featured lg:col-span-2 pb-2">
+                <h3 class="text-xss font-bold">Sig Sauer</h3>
+                <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                  ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                </a>
+              </div>
+              <div class="">
+                <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                <div class="mt-5 lg:mt-8 space-y-2">
+                  <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                  </a>
+                  <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                    <span>Add to Your List</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>              
+                  </a>
+                </div>
+              </div>
+            </div>
+
+              <!-- 3 -->    
+            <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white shadow-card gap-5 p-5">
+              <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+                <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+              </a>
+              <div class="featured lg:col-span-2 pb-2">
+                <h3 class="text-xss font-bold">Sig Sauer</h3>
+                <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                  ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                </a>
+              </div>
+              <div class="">
+                <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                <div class="mt-5 lg:mt-8 space-y-2">
+                  <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                  </a>
+                  <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                    <span>Add to Your List</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>              
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->    
+            <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white shadow-card gap-5 p-5">
+              <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+                <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+              </a>
+              <div class="featured lg:col-span-2 pb-2">
+                <h3 class="text-xss font-bold">Sig Sauer</h3>
+                <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+                  ADM Spek Red Dot Sight w/ Aluminum QD Mount
+                </a>
+              </div>
+              <div class="">
+                <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+                <div class="mt-5 lg:mt-8 space-y-2">
+                  <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+                  </a>
+                  <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                    <span>Add to Your List</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>              
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- pagination -->
+          <div class="flex items-center justify-center text-sm space-x-2.5 mt-10">
+            <a href="#" class="hover:text-brand-yellow-100 border border-brand-gray-200 rounded transition-colors ease-linear py-1 px-1.5">1</a>
+            <a href="#" class="hover:text-brand-yellow-100 transition-colors ease-linear">2</a>
+            <a href="#" class="hover:text-brand-yellow-100 transition-colors ease-linear">3</a>
+            <a href="#" class="hover:text-brand-yellow-100 transition-colors ease-linear">4</a>
+            <a href="#" class="underline hover:text-brand-yellow-100 transition-colors ease-linear">Next</a>
+          </div>
+
+        </div> 
+      </div>
+    </div>
+  </main>
+  <footer> 
+    <div class="bg-brand-gray-100 mt-20">
+      <div class="container mx-auto text-white pt-10 pb-20 lg:pb-7 px-5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-6 text-center md:text-start gap-y-10 gap-6">
+          <!-- Pages -->
+          <div class="footer-link flex flex-col space-y-3">
+            <h5>Pages</h5>
+            <a href="https://store.theshootingcentre.com/about-csc/">About CSC</a>
+            <a href="https://store.theshootingcentre.com/orders/">Orders</a>
+            <a href="https://store.theshootingcentre.com/articles/">Articles</a>
+            <a href="https://store.theshootingcentre.com/support/">Support</a>
+            <a href="https://store.theshootingcentre.com/contact-us/">Contact Us</a>
+            <a href="https://store.theshootingcentre.com/gunsmithing/">Gunsmithing</a>
+            <a href="https://store.theshootingcentre.com/terms-conditions/">Terms &amp; Conditions</a>
+            <a href="/sitemap.php">Sitemap</a>
+          </div>
+          <!-- Categories -->
+          <div class="footer-link flex flex-col space-y-3">
+            <h5>Categories</h5>
+            <a href="https://store.theshootingcentre.com/firearms/">Firearms</a>
+            <a href="https://store.theshootingcentre.com/optics/">Optics</a>
+            <a href="https://store.theshootingcentre.com/ammunition/">Ammunition</a>
+            <a href="https://store.theshootingcentre.com/reloading/">Reloading</a>
+            <a href="https://store.theshootingcentre.com/parts-accessories/">Parts &amp; Accessories</a>
+            <a href="https://store.theshootingcentre.com/lifestyle/">Lifestyle</a>
+            <a href="https://store.theshootingcentre.com/sale/">SALE!</a>
+          </div>
+          <!-- Info -->
+          <div class="footer-link flex flex-col space-y-3">
+            <h5>Info</h5>
+            <p class="text-sm">
+              Calgary Shooting Centre Ltd.
+              Bay 4, 7130 Fisher Road SE
+              Calgary, Alberta T2H 0W3
+            </p>
+            <a href="tel:+1 (403) 451-1777">Call us: +1 (403) 451-1777</a>
+          </div>
+          <!-- Subscribe to our newsletter -->
+          <div class="md:col-span-2 lg:col-span-3 flex flex-col space-y-3">
+            <h5>Subscribe to our newsletter</h5>
+            <p class="text-sm">Get the latest updates on new products and upcoming sales</p>
+            <!-- search -->
+            <form action="#" class="w-full flex flex-col xl:flex-row items-start text-brand-gray-100 rounded gap-y-3">
+              <input type="email" placeholder="Your email address" class="relative z-20 w-full border-none focus:ring-0 text-sm rounded xl:rounded-r-none py-2.5">
+              <a href="#" class="h-10 w-full xl:w-auto btn btn-yellow rounded xl:rounded-r xl:rounded-l-none px-8 py-2">
+                Subscime            
+              </a>  
+            </form>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="bg-[#1a1a1a]">
+      <div class="container mx-auto text-white py-7 px-5">
+        <div class="flex flex-col md:flex-row justify-between text-center md:text-start items-center gap-6">
+          <div class="footer-link text-[13px]/5">
+            <p>© 2023 CSC - Canada's Gun Shop </p>
+            <a href="#" class="underline decoration-white">Manage Website Data Collection Preferences</a>
+          </div>
+  
+          <div class="order-first md:order-none flex items-center gap-2.5">
+            <div class="w-16">
+              <img class="w-full h-full object-contain" src="./image/visa.png" alt="">
+            </div>
+            <div class="w-16 h-8">
+              <img class="w-full h-full object-contain" src="./image/mastercard-icon-512x395-qoejqj7z.png" alt="">
+            </div>
+            <div class="w-8 h-8">
+              <img class="w-full h-full object-contain bg-white" src="./image/american-express-icon-12.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </footer>
+  <!-- Swiper JS -->
+  <div class="overlay hidden fixed inset-0 bg-black/50 z-20"></div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./js/flowbite.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/swiper.js"></script>
+
+</body>
+</html>
