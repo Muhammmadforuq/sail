@@ -103,6 +103,11 @@
 		@apply font-semibold text-[10px]/4;
 		
 	} 
+
+	.link-tansition{
+		@apply hover:text-brand-yellow-100 transition-colors ease-linear
+	}
+
 	/* tab css */
 [data-tab-content] {
   display: none;
