@@ -94,7 +94,8 @@
 	.contact input[type=text],
 	.contact input[type=password],
 	.contact input[type=email], 
-	.contact select{
+	.contact select,
+	.contact textarea{
 		@apply w-full text-sm border-brand-gray-200 focus:ring-brand-yellow-100 rounded py-2.5 px-3.5;
 		
 	} 

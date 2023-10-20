@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="icon" type="image/x-icon" href="./image/favicon.png">
-  <title>CSC || Support</title>
+  <title>CSC || General Inq</title>
 </head>
 <body>
   <header class="relative"> 
@@ -827,29 +827,51 @@
       <div class="hidden md:flex items-center text-xss space-x-2">
         <a href="./index.html" class="underline">Home</a>
         <span>/</span>
-        <p>Support</p>
+        <a href="./contact-us.html" class="underline">Contact Us</a>
+        <span>/</span>
+        <p>General Inquiries</p>
       </div>
     </div>
-    <!-- About CSC -->
+    <!-- General Inquiries -->
     <div class="container lg:max-w-26 mx-auto mt-12 px-5">
-      <h1 class="text-center text-3xl">Support</h1>
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between font-semibold text-sm pl-2 md:pl-0 md:gap-4 mt-4">
-        <a href="term.html" class="underline -translate-x-2 md:translate-x-0">Shipping</a>
-        <a href="term.html" class="underline">Returns</a>
-        <a href="term.html" class="underline">Exchanges</a>
-        <a href="term.html" class="underline">Price Matching</a>
-        <a href="term.html" class="underline">Privacy Policy</a>
-        <a href="term.html" class="underline">Resources</a>
-        <a href="term.html" class="underline">Sezzle</a>
-        <a href="term.html" class="underline">Contact</a>
-      </div>
-      <div class="space-y-3 mt-14">
-        <h2 class="text-2xl">What do you need help with?</h2>
-        <p class="text-sm">
-          Answers to many of the commonly asked questions can be found in the links above.  However, if you're unable to find the answer to your question, please feel free to 
-          <a href="#" class="inline-block link-tansition underline">contact us</a>.
+      <div class="border-b border-brand-gray-200 space-y-6 lg:space-y-12 pb-7">
+        <h1 class="text-center text-3xl">General Inquiries</h1>
+        <p class="text-xl">
+          For general inquiries please fill out the form below and we'll get back to you as soon as we can.  Thanks!
         </p>
       </div>
+      <form class="contact grid lg:grid-cols-2 gap-5 mt-7">   
+        <!-- Full Name -->
+        <div class="space-y-2">
+          <label for="First">Full Name</label>
+          <input type="text" name="" id="First">
+        </div>
+        <!-- Phone Number-->
+        <div class="space-y-2">
+          <label for="number">Phone Number</label>
+          <input type="text" name="" id="number">
+        </div>
+        <!--email  -->
+        <div class="space-y-2">
+          <div class="flex items-center justify-between">
+            <label for="email">Email Address:</label>
+            <small class="uppercase">Required</small>
+          </div>
+          <input type="email" name="" id="email">
+        </div>
+        <!--Comments/Questions  -->
+        <div class="lg:col-span-2 space-y-2">
+          <div class="flex items-center justify-between">
+            <label for="email">Comments/Questions</label>
+            <small class="uppercase">Required</small>
+          </div>
+          <textarea name="" id="" cols="30" rows="6"></textarea>
+        </div>
+
+        <div class="lg:col-span-2 mt-16">
+          <button type="submit" class="btn btn-yellow w-full md:w-auto px-8 ml-auto">Submit Form</button>
+        </div>
+      </form>
     </div>
     
 
