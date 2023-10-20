@@ -1,3 +1,44 @@
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  if (tab) {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.tabTarget)
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove('active')
+      })
+      tabs.forEach(tab => {
+        tab.classList.remove('active')
+      })
+      tab.classList.add('active')
+      target.classList.add('active')
+    });
+  }
+});
+
+// =============== accordion ===============
+const accoddion = document.querySelectorAll(".accordion .accordionBtn");
+accoddion.forEach((cell) => {
+  cell.addEventListener("click", () => {
+
+    let accordionContent = cell.parentElement.nextElementSibling;
+
+    cell.querySelector(".plus-icon").classList.toggle('hidden');
+    cell.querySelector(".minus-icon").classList.toggle('hidden');
+    console.log(cell.querySelector(".minus-icon"));
+    accordionContent.classList.toggle('active')
+    if (accordionContent.classList.contains('active')) {
+      accordionContent.style.height = accordionContent.scrollHeight + "px";
+    } else {
+      accordionContent.style.height = "0";
+    }
+  });
+});
+
+
+
+
 document.querySelectorAll(".menuBtn").forEach((x)=>{
     if(x){
       x.addEventListener('click', ()=>{
@@ -6,6 +47,8 @@ document.querySelectorAll(".menuBtn").forEach((x)=>{
       })
     }
 })
+
+
 
 
 const toggleMenu = document.querySelectorAll(".mobileToggle");
@@ -60,24 +103,6 @@ dropdownButtons.forEach((button) => {
   });
 });
 
-// =============== accordion ===============
-const accoddion = document.querySelectorAll(".accordion .accordionBtn");
-accoddion.forEach((cell) => {
-  cell.addEventListener("click", () => {
-
-    let accordionContent = cell.parentElement.nextElementSibling;
-
-    cell.querySelector(".plus-icon").classList.toggle('hidden');
-    cell.querySelector(".minus-icon").classList.toggle('hidden');
-    console.log(cell.querySelector(".minus-icon"));
-    accordionContent.classList.toggle('active')
-    if (accordionContent.classList.contains('active')) {
-      accordionContent.style.height = accordionContent.scrollHeight + "px";
-    } else {
-      accordionContent.style.height = "0";
-    }
-  });
-});
 
 
 // imagae zoom
@@ -108,21 +133,3 @@ zoom.addEventListener('mouseleave', (e)=>{
 
 
 
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-
-tabs.forEach(tab => {
-  if (tab) {
-    tab.addEventListener('click', () => {
-      const target = document.querySelector(tab.dataset.tabTarget)
-      tabContents.forEach(tabContent => {
-        tabContent.classList.remove('active')
-      })
-      tabs.forEach(tab => {
-        tab.classList.remove('active')
-      })
-      tab.classList.add('active')
-      target.classList.add('active')
-    });
-  }
-});
