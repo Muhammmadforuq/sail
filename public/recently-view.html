@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <link rel="icon" type="image/x-icon" href="./image/favicon.png">
-  <title>CSC || Marlin</title>
+  <title>CSC || Recently Viewed Items ||</title>
 </head>
 <body>
   <header class="relative"> 
@@ -597,7 +597,7 @@
       <div class="container mx-auto flex items-start xl:items-center justify-between font-bold gap-3 xl:space-x-5">
         <div class="header-link flex items-start xl:items-center flex-wrap gap-x-3 xl:gap-x-5 px-5">
           <!-- Firearms -->
-          <div class="relative z-10">
+          <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">Firearms</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -611,7 +611,7 @@
             </div>
           </div>
           <!-- Optics -->
-          <div class="relative z-10">
+          <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">Optics</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -630,7 +630,7 @@
             </div>
           </div>
           <!-- Ammunition -->
-          <div class="relative z-10">
+          <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">Ammunition</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -644,7 +644,7 @@
             </div>
           </div>
           <!-- Reloading -->
-          <div class="relative z-10">
+          <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">Reloading</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -660,7 +660,7 @@
             </div>
           </div>
           <!-- Parts & Accessories  -->
-          <div class="relative z-10">
+          <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">Parts & Accessories </span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -759,8 +759,8 @@
               </div>
             </div>
           </div>
-          <!-- lifestyle  -->
-          <div class="relative z-10">
+            <!-- lifestyle  -->
+            <div class="relative">
             <button class="dropdown-button py-3">
               <span class="pointer-events-none">lifestyle</span>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-3 h-3">
@@ -820,239 +820,134 @@
       </div>
     </div>
   </header>
+
   <main>
-    <!-- hero -->
+    <!-- breakcramb -->
     <div class="container mx-auto mt-5 px-5"> 
-      <div class="grid md:grid-cols-4 gap-5">
-        <div class="hidden md:block">
-          <p>Refine by</p>
-          <p class="mt-2.5">No filters applied</p>
-        </div>
-        <div class="md:col-span-3 space-y-7">
-          <!-- breakcramb -->
-          <div class="hidden md:flex items-center text-xss space-x-2">
-            <a href="./index.html" class="underline">Home</a>
-            <span>/</span>
-            <p>Marlin</p>
-          </div>
-          <!-- heading -->
-          <h1 class="text-3xl">Marlin</h1>
-          <!-- select -->
-          <div class="relative grid grid-cols-2 sm:flex justify-between md:justify-end items-center text-xss gap-2">
-            <!-- filter Mobile -->
-            <div class="md:hidden">
-              <button type="button" class="dropdown-button w-full justify-center sm:w-auto font-bold bg-brand-yellow-100 text-sm rounded py-2.5 px-9">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5">
-                  <path fill-rule="evenodd" d="M3.792 2.938A49.069 49.069 0 0112 2.25c2.797 0 5.54.236 8.209.688a1.857 1.857 0 011.541 1.836v1.044a3 3 0 01-.879 2.121l-6.182 6.182a1.5 1.5 0 00-.439 1.061v2.927a3 3 0 01-1.658 2.684l-1.757.878A.75.75 0 019.75 21v-5.818a1.5 1.5 0 00-.44-1.06L3.13 7.938a3 3 0 01-.879-2.121V4.774c0-.897.64-1.683 1.542-1.836z" clip-rule="evenodd" />
-                </svg>     
-                <span class="pointer-events-none">Filter</span>              
-              </button>
-
-              <div class="hidden absolute top-4 inset-x-0 h-full z-20 -mt-0.5">
-                <div class="accordion filter-shape mt-7 bg-brand-gray-400">
-                  <!-- Brand -->
-                  <section>
-                    <div>
-                      <button type="button"
-                        class="accordionBtn w-full flex justify-between items-center border-b border-brand-gray-50 cursor-pointer transition ease-linear duration-700 py-4 px-3">
-                        <p class="font-bold text-sm pointer-events-none">Brand</p>
-                        <!-- plus -->
-                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                        </svg>
-                        <!-- minus -->
-                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                        </svg>
-                      </button>
-                    </div>
-      
-                    <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5 px-3.5">
-                      <div class="space-x-2 mt-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Aimpoint<span>(4)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#"> American Defense Mfg.<span>(1)</span></a>
-                      </div>
-      
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Blaser<span>(1)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Browning<span>(1)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Burris<span>(1)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Bushnell<span>(1)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">EOTECH<span>(1)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">HOLOSUN<span>(7)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Leupold.<span>(1)</span></a>
-                      </div>
-      
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">Primary Arms<span>(1)</span></a>
-                      </div>
-      
-                    </div>
-                  </section>
-                  <!-- Magnification -->
-                  <section>
-                    <div>
-                      <button type="button" class="accordionBtn w-full flex justify-between border-b border-brand-gray-50 items-center cursor-pointer transition ease-linear duration-700 py-4 px-3">
-                        <p class="font-bold text-sm">Magnification</p>
-                        <!-- plus -->
-                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                        </svg>
-                        <!-- minus -->
-                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="w-full h-0 text-xs transition-[height] duration-200 ease-in overflow-hidden space-y-2.5 px-3.5">
-                      <div class="space-x-2 mt-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">1x<span>(42)</span></a>
-                      </div>
-                      <div class="space-x-2">
-                        <input class="w-4 h-4 rounded focus:ring-0" type="checkbox" name="" id="">
-                        <a href="#">5x<span>(1)</span></a>
-                      </div>
-      
-                    </div>
-                  </section>
-                   <!--Rating -->
-                  <section>
-                    <div>
-                      <button type="button" class="accordionBtn w-full flex justify-between border-b border-brand-gray-50 items-center cursor-pointer transition ease-linear duration-700 py-4 px-3">
-                        <p class="font-bold text-sm">Rating</p>
-                        <!-- plus -->
-                        <svg class="plus-icon pointer-events-none w-4 h-4" xmlns="http://www.w3.org/2000/svg"
-                          fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m6-6H6" />
-                        </svg>
-                        <!-- minus -->
-                        <svg class="minus-icon hidden pointer-events-none w-4 h-4"
-                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                          stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
-                        </svg>
-                      </button>
-                    </div>
-                    <div class="w-full h-0 text-xss transition-[height] duration-200 ease-in overflow-hidden px-3.5">
-                      <div class="space-y-1 mt-2">
-                        <a href="#" class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          
-                            &amp; up
-                          <span class="inline-block pl-0.5">(6)</span>
-                        </a>
-                        <a href="#" class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          
-                            &amp; up
-                          <span class="inline-block pl-0.5">(6)</span>
-                        </a>
-                        <a href="#" class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          
-                            &amp; up
-                          <span class="inline-block pl-0.5">(6)</span>
-                        </a>
-                        <a href="#" class="flex items-center pb-3">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(253, 162, 57, 1)"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" style="fill: rgba(235, 235, 235, 1);"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-                          
-                        &amp; up
-                          <span class="inline-block pl-0.5">(6)</span>
-                        </a>
-                      </div>
-                    </div>
-                  </section>
-      
-                </div>
-              </div>
-            </div>
-
-            <form class="flex items-center justify-end sm:space-x-5">
-                <label class="hidden sm:block font-bold whitespace-nowrap" for="sort">Sort By:</label>
-                <select class="w-full sm:w-auto text-xss cursor-pointer border-brand-gray-200 hover:border-brand-yellow-100 rounded focus:ring-0" name="sort" id="sort" data-gtm-form-interact-field-id="0">
-                  <option value="featured">Featured Items</option>
-                  <option value="newest">Newest Items</option>
-                  <option value="bestselling">Best Selling</option>
-                  <option value="alphaasc" selected="">A to Z</option>
-                  <option value="alphadesc">Z to A</option>
-                  <option value="avgcustomerreview">By Review</option>
-                  <option value="priceasc">Price: Ascending</option>
-                  <option value="pricedesc">Price: Descending</option>
-                </select> 
-            </form>
-            <button data-tab-target="#cards" type="button" class="tab active hidden lg:block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20"><path d="M4 4h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 10h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM4 16h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4z" fill="currentColor"></path>
-              </svg>
-            </button>
-
-            <button data-tab-target="#card" type="button" class="tab  hidden lg:block">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20"><path d="M4 6h2v2H4zm0 5h2v2H4zm0 5h2v2H4zm16-8V6H8.023v2H18.8zM8 11h12v2H8zm0 5h12v2H8z" fill="currentColor"></path></svg>
-            </button>
-            
-          </div>
-
-          <p class="text-sm">There are no products listed under this brand.</p>
-
-        </div> 
+      <div class="hidden md:flex items-center text-xss space-x-2">
+        <a href="./index.html" class="underline">Home</a>
+        <span>/</span>
+        <a href="./login.html" class="underline">Your Account</a> 
+        <span>/</span>
+        <p> Recently Viewed Items</p>
       </div>
     </div>
+  
+    <div class="container lg:max-w-[1040px] mx-auto mt-12 px-5">
+      <h1 class="text-center text-3xl">Recently Viewed</h1>
+      <div class="flex flex-wrap items-center justify-start lg:justify-center font-semibold text-sm gap-y-2 gap-x-4 mt-6">
+        <a href="#" class="link-tansition underline">Orders</a>
+        <a href="#" class="link-tansition underline">Messages (0)</a>
+        <a href="#" class="link-tansition underline">Addresses</a>
+        <a href="#" class="link-tansition underline">Payment Methods</a>
+        <a href="#" class="link-tansition underline">Your Lists (0)</a>
+        <a href="#" class="text-brand-gray-600 underline">Recently Viewed</a>
+        <a href="#" class="link-tansition underline">Account Settings</a>
+      </div>
+      <div class="space-y-5 mt-10">
+         <!-- 1 -->    
+        <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white border border-brand-gray-200 gap-5 p-5">
+          <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+            <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+          </a>
+          <div class="featured lg:col-span-2 pb-2">
+            <h3 class="text-xss font-bold">Sig Sauer</h3>
+            <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+              ADM Spek Red Dot Sight w/ Aluminum QD Mount
+            </a>
+          </div>
+          <div>
+            <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+            <div class="mt-5 lg:mt-8 space-y-2">
+              <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+              </a>
+              <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                <span>Add to Your List</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>              
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- 1 -->    
+         <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white border border-brand-gray-200 gap-5 p-5">
+          <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+            <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+          </a>
+          <div class="featured lg:col-span-2 pb-2">
+            <h3 class="text-xss font-bold">Sig Sauer</h3>
+            <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+              ADM Spek Red Dot Sight w/ Aluminum QD Mount
+            </a>
+          </div>
+          <div>
+            <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+            <div class="mt-5 lg:mt-8 space-y-2">
+              <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+              </a>
+              <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                <span>Add to Your List</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>              
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- 1 -->    
+         <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white border border-brand-gray-200 gap-5 p-5">
+          <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+            <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+          </a>
+          <div class="featured lg:col-span-2 pb-2">
+            <h3 class="text-xss font-bold">Sig Sauer</h3>
+            <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+              ADM Spek Red Dot Sight w/ Aluminum QD Mount
+            </a>
+          </div>
+          <div>
+            <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+            <div class="mt-5 lg:mt-8 space-y-2">
+              <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+              </a>
+              <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                <span>Add to Your List</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>              
+              </a>
+            </div>
+          </div>
+        </div>
+         <!-- 1 -->    
+         <div class="relative grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 bg-white border border-brand-gray-200 gap-5 p-5">
+          <a href="#" class="row-span-2 md:row-span-1 block relative w-full h-40 lg:h-48">
+            <img class="w-full h-full object-contain" src="./image/18718-001__34310_1.jpg" alt="">         
+          </a>
+          <div class="featured lg:col-span-2 pb-2">
+            <h3 class="text-xss font-bold">Sig Sauer</h3>
+            <a href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" tabindex="0">
+              ADM Spek Red Dot Sight w/ Aluminum QD Mount
+            </a>
+          </div>
+          <div>
+            <h2 class="font-bold text-xl/none border-b border-brand-gray-200 pb-4">$33.60</h2>
+            <div class="mt-5 lg:mt-8 space-y-2">
+              <a class="btn btn-yellow" href="https://store.theshootingcentre.com/sig-sauer-elite-ball-9mm-115-gr-fmj-ammunition/" data-event-type="product-click" data-product-id="18100" tabindex="0">Choose Options             
+              </a>
+              <a href="/wishlist.php?action=addwishlist&amp;product_id=18100" class="btn btn-white-outline">
+                <span>Add to Your List</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>              
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
   </main>
   <footer> 
     <div class="bg-brand-gray-100 mt-20">
@@ -1134,6 +1029,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/swiper.js"></script>
+
 
 </body>
 </html>

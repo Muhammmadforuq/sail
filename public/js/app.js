@@ -70,6 +70,21 @@ toggleMenuX.forEach((close)=>{
   })
 })
 
+document.querySelectorAll('.modulBtn').forEach(modal=>{
+  if(!false){
+    modal.addEventListener('click',()=>{
+      document.querySelector('.modalList').classList.toggle('hidden');
+      document.querySelector('.overlay2').classList.toggle('hidden')
+    })
+  }
+})
+
+document.querySelector('.overlay2').addEventListener('click',()=>{
+  console.log('overlay');
+  document.querySelector('.modalList').classList.toggle('hidden');
+  document.querySelector('.overlay2').classList.toggle('hidden')
+})
+
 
 
 
@@ -105,6 +120,8 @@ dropdownButtons.forEach((button) => {
 
 
 
+
+
 // imagae zoom
 const zoom = document.getElementById("image-container");
 const img = document.getElementById("image");
@@ -124,6 +141,7 @@ zoom.addEventListener('mouseleave', (e)=>{
   img.style.transform = 'scale(1)'
 
 })
+
 
 
 
