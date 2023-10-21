@@ -36,6 +36,22 @@ accoddion.forEach((cell) => {
   });
 });
 
+const dropdownButtons = document.querySelectorAll('.dropdown-button');
+dropdownButtons.forEach((button) => {
+
+  const menu = button.nextElementSibling;
+
+  button.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!menu.contains(event.target) && event.target !== button) {
+      menu.classList.add('hidden');
+    }
+  });
+});
+
 
 
 
@@ -47,8 +63,6 @@ document.querySelectorAll(".menuBtn").forEach((x)=>{
       })
     }
 })
-
-
 
 
 const toggleMenu = document.querySelectorAll(".mobileToggle");
@@ -102,21 +116,6 @@ document.querySelector(".overlay").addEventListener('click', ()=>{
   document.querySelector(".overlay").classList.toggle("hidden");
 })
 
-const dropdownButtons = document.querySelectorAll('.dropdown-button');
-dropdownButtons.forEach((button) => {
-
-  const menu = button.nextElementSibling;
-
-  button.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
-  });
-
-  document.addEventListener('click', (event) => {
-    if (!menu.contains(event.target) && event.target !== button) {
-      menu.classList.add('hidden');
-    }
-  });
-});
 
 
 
